@@ -66,3 +66,19 @@ body {
 .container {
     animation: zoomIn 1s ease-in-out;
 }
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 20px #00ffff;
+    }
+    50% {
+        box-shadow: 0 0 40px #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 20px #00ffff;
+    }
+}
+
+/* Card class နာမည်မှန်ရမယ် */
+.container {
+    animation: zoomIn 1s ease-in-out, glowPulse 2s infinite alternate;
+}
